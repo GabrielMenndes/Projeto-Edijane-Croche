@@ -1,11 +1,25 @@
         const drawerHandle = document.getElementById('drawerHandle');
         const closeBtn = document.getElementById('closeBtn');
         const sidebar = document.getElementById('sidebar');
+        const toggleSidebarBtn = document.getElementById('toggleSidebar');
+
+        if (toggleSidebarBtn) {
+            toggleSidebarBtn.addEventListener('click', () => {
+                const isOpen = sidebar.classList.toggle('active');
+                toggleSidebarBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            });
+        }
 
         const openSidebar = () => sidebar.classList.add('active');
         const closeSidebar = () => sidebar.classList.remove('active');
 
-        drawerHandle.addEventListener('click', openSidebar);
+        drawerHandle.addEventListener('click', () => {
+            if (sidebar.classList.contains('active')) {
+                closeSidebar();
+            } else {
+                openSidebar();
+            }
+        });
         drawerHandle.addEventListener('keydown', (event) => {
             if (event.key === 'Enter' || event.key === ' ') {
                 event.preventDefault();
