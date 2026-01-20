@@ -1,6 +1,6 @@
 # 🧶 Edijane Crochê - Arte Artesanal
 
-> "Arte feita a mão, ponto a ponto, com muito amor e dedicação."
+> "Arte feita a mão, ponto a ponto, com muito amor e dedicação! "
 
 Este projeto é um site de portfólio e catálogo digital desenvolvido para a **Edijane Crochê**, focado na exibição de bolsas e acessórios artesanais. O objetivo é apresentar os produtos de forma elegante e facilitar o contato de clientes diretamente pelo WhatsApp.
 
